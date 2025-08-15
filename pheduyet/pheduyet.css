@@ -1,0 +1,365 @@
+.thanh_chuc_nang {
+  width: 18%;
+  height: 100vh;
+  background-color: rgb(10, 10, 32);
+  float: left;
+}
+.thanh_chuc_nang::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 40px;
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+}
+.icon-pd {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.qlpd {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(10, 10, 32);
+  padding: 10px 20px 10px 40px;
+  margin-top: 20px;
+  color: white;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+.icon-kho {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.qlk {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(10, 10, 32);
+  padding: 10px 20px 10px 40px;
+  color: white;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+.icon-ch {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.qlck {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(10, 10, 32);
+  padding: 10px 20px 10px 40px;
+  color: white;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+.icon-nh {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.qlnk {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(10, 10, 32);
+  padding: 10px 20px 10px 40px;
+  color: white;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+.icon-sp {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.qlsp {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(10, 10, 32);
+  padding: 10px 20px 10px 40px;
+  color: white;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+.icon-nv {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.qlnvk {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(10, 10, 32);
+  padding: 10px 20px 10px 40px;
+  color: white;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+.qlpd:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(10, 10, 32);
+}
+.qlk:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(10, 10, 32);
+}
+.qlck:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(10, 10, 32);
+}
+.qlnk:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(10, 10, 32);
+}
+.qlsp:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(10, 10, 32);
+}
+.qlnvk:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(10, 10, 32);
+}
+.thanh_thong_tin {
+  height: 40px;
+  margin-left: 18%;
+  background-color: rgb(255, 255, 255);
+  border-width: 1px 0px 1px 0px;
+  border-style: solid;
+  border-color: rgb(10, 10, 32);
+  position: relative;
+  cursor: pointer;
+}
+.thong_tin_1 {
+  width: 50%;
+  height: 100%;
+  margin: 0px 0px 0px 30px;
+  padding: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+.item {
+  margin: 0px 15px;
+}
+.thong_tin_2 {
+  height: 100%;
+  width: 50%;
+  margin: 0px 15px 0px 0px;
+  padding: 0px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  right: 0;
+  list-style-type: none;
+}
+.item1 {
+  position: absolute;
+  right: 0;
+  margin-right: 35px;
+}
+.item2 {
+  position: absolute;
+  right: 0;
+  margin-right: 120px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+.item2_link {
+  color: black;
+  text-decoration: none;
+}
+.bang_thong_bao {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  border: 1px solid rgb(215, 215, 215);
+  background-color: white;
+  margin-top: 5px;
+  right: 0;
+  transform-origin: top right;
+  display: none;
+  z-index: 1000;
+}
+.chi_tiet_thong_bao {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  color: rgb(48, 48, 81);
+}
+.thong_bao {
+  height: 40px;
+  padding: 10px 20px;
+  border-width: 1px 0px;
+  background-color: rgb(216, 243, 255);
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgb(228, 228, 228);
+}
+.thong_bao:hover {
+  background-color: rgb(240, 240, 240);
+}
+.xem_tat_ca {
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(240, 240, 240);
+}
+.icon-ac {
+  position: absolute;
+  right: 0;
+  margin: 195px;
+}
+.icon-an {
+  position: absolute;
+  right: 0;
+  margin: 65px;
+}
+.noi_dung {
+  margin-left: 18%;
+  padding: 15px 30px 15px 30px;
+  height: calc(100vh - 102px);
+  background-color: rgb(255, 255, 255);
+  position: relative;
+}
+.danh_sach_phe_duyet {
+  width: 50%;
+  height: 30px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-self: center;
+  margin: 10px 0px 40px 0px;
+}
+.thong_tin_phe_duyet {
+  width: 100%;
+  height: 592px;
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(188, 174, 174);
+  overflow-x: auto;
+  overflow-y: auto;
+}
+.thong_tin_chi_tiet_phe_duyet {
+  width: 100%;
+  height: 50px;
+  font-weight: bold;
+  background-color: rgb(211, 206, 206);
+  color: black;
+  list-style-type: none;
+  padding: 0 20px;
+  align-items: center;
+  display: grid ;
+  grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr  ;
+  gap: 10px;  
+  box-sizing: border-box;
+}
+.phieu_phe_duyet {
+  width: 100%;
+  height: 60px;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  
+}
+.phieu_phe_duyet .mpc {
+  width: 25%;
+  height: 100%;
+}
+.phieu_phe_duyet .kn {
+  width: 25%;
+  height: 100%;
+}
+.phieu_phe_duyet .nc {
+  width: 25%;
+  height: 100%;
+}
+.phieu_phe_duyet .tuchoi {
+  width: 10%;
+  height: 100%;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  color: red;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.phieu_phe_duyet .duyet {
+  width: 10%;
+  height: 100%;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  color: green;
+  cursor: pointer;
+  margin-right: 20px;
+}
+

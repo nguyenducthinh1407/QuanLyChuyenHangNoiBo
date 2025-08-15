@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <title>BaoCao</title>
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="qlch.css">
+            <style>
+              
+            </style>
+        </head>
+        <body>
+            <nav class="thanh_chuc_nang" >
+                <button class="qlpd" onclick="moPheduyet()">
+                    <i class="material-icons icon-pd">approval</i>
+                    <p>Phê duyệt</p>
+                <button class="qlk" onclick="moQuanlykho()">
+                    <i class="material-icons icon-kho">home</i>
+                    <p>Quản lý kho</p>
+                </button>
+                <button class="qlck" onclick="moQuanlychuyenhang()">
+                    <i class="material-icons icon-ch">local_shipping</i>
+                    <p>Quản lý chuyển hàng</p>
+                </button>
+                <button class="qlnk" onclick="moQuanlynhapkho()" >
+                    <i class="material-icons icon-nh">add_home</i>
+                    <p>Quản lý nhập kho</p>
+                </button>
+                <button class="qlsp" onclick="moQuanlysanpham()">
+                    <i class="material-icons icon-sp">inventory</i>
+                    <p>Quản lý sản phẩm</p>
+                </button>
+                <button class="qlnvk" onclick="moQuanlynhanvienkho()">
+                    <i class="material-icons icon-nv">groups</i>
+                    <p>Quản lý nhân viên kho</p>
+                </button>
+            </nav>
+            <header class="thanh_thong_tin">
+                <ul class="thong_tin_1">
+                    <li class="item">Giới thiệu</li>
+                    <li class="item">Liên hệ</li>
+                    <li class="item">Hỗ trợ </li>
+                </ul>
+                <ul class="thong_tin_2"> 
+                    <li class="item1">Tên</li>
+                    <i class="material-icons icon-ac">notifications</i> 
+                    <li class="item2">
+                        <a href="#" class="item2_link">
+                            Thông báo
+                            <div class="bang_thong_bao">
+                                <header class="chi_tiet_thong_bao">Thông báo phê duyệt
+                                </header>
+                                <div class="thong_bao">Có phiếu yêu cầu chuyển hàng mới</div>
+                                <div class="xem_tat_ca">Xem tất cả</div>
+                            </div>
+                        </a>
+                    </li>
+                    <i class="material-icons icon-an">account_circle</i>
+                </ul>
+            </header > 
+            <section class="noi_dung">
+                <div class="danh_sach_chuyen_hang">
+                    <p>Danh sách phiếu chuyển hàng</p>
+                </div>
+                    <nav class="chuc_nang_chuyen_hang">
+                        <div class="cnk">
+                            <button class="icon-btnthem icon-them" onclick="openthem()">
+                                <i class="material-icons">add</i>
+                            </button>
+                            <div class="bang_them_chuyen_hang">
+                                <form class="form_them_chuyen_hang" >
+                                    <div class="ma_phieu_chuyen">
+                                        <span>Mã phiếu chuyển:</span>
+                                    </div>
+                                    <div class="kho_xuat">
+                                        <span>Kho xuất: K01</span>
+                                    </div>
+                                    <div class="kho_nhap">
+                                        <span>Kho nhập:</span>
+                                        <input type="text" name="kho_nhap">
+                                    </div>
+                                    <div class="ma_nhan_vien_tao">
+                                        <span>Mã nhân viên tạo:</span>
+                                        <input type="text" name="ma_nv_tao">
+                                    </div>
+                                    <div class="ngay_chuyen">
+                                        <span>Ngày chuyển:</span>
+                                        <input type="text" name="ngay_chuyen"> dd-mm-yyyy
+                                    </div>
+                                    <div class="ma_trang_thai">
+                                        <span>Mã trạng thái: 1</span>
+                                    </div>
+                                    <div class="dien_giai">
+                                        <span>diễn giải:</span>
+                                        <input type="text" name="dien_giai">
+                                    </div>
+                                    <div class="phieu_chuyen_hang_chi_tiet">
+                                        <section class="them_phieu_chuyen_chi_tiet">
+                                            <ul class="thong_tin_pchct">
+                                                <li class="ma_chi_tiet">Mã chi tiết</li>
+                                                <li class="ma_san_pham">Mã sản phẩm</li>
+                                                <li class="so_luong">Số lượng</li>
+                                            </ul>
+                                        </section>
+                                        <div class="nhap_tt">
+                                            <div class="mct">
+                                            </div>
+                                            <div class="msp">
+                                                <input type="text" name="msp">
+                                            </div>
+                                            <div class="sl">
+                                                <input type="text" name="sl"> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="thao_tac">
+                                        <button class="huy">Hủy</button>
+                                        <button class="luu">Lưu</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <button class="icon-btnsua icon-sua " onclick="opensua()">
+                                <i class="material-icons">build_circle </i>
+                            </button>
+                            <button class="icon-btnxoa icon-xoa" onclick="openxoa()">
+                                <i class="material-icons">delete</i>
+                            </button>
+                            <button class="icon-btnxem icon-xem" onclick="openxem()">   
+                                <i class="material-icons">visibility</i>
+                            </button>
+                            <form class="tim_kiem" onsubmit="return false">
+                                <i class="material-icons icon-timkiem">search</i>
+                                <input type="text" placeholder="Tìm kiếm">
+                            </form>
+                        </div>
+                    </nav>
+                    <section  class="thong_tin_chuyen_hang">
+                        <ul class="thong_tin_chi_tiet_chuyen_hang">
+                            <li class="maPhieuChuyen">Mã phiếu chuyển</li>
+                            <li class="khoXuat">Kho xuất</li>
+                            <li class="khoNhap">Kho nhập</li>
+                            <li class="maNvTao">Mã nhân viên tạo</li>
+                            <li class="ngayChuyen">Ngày chuyển</li>
+                            <li class="trangThai">Trạng thái</li>
+                            <li class="dienGiai">Diễn giải</li>
+                        </ul>
+                        <div class="dulieu">
+                        </div>
+                    </section>
+            </section>
+            <script src="./qlch.js"></script>
+    </html>

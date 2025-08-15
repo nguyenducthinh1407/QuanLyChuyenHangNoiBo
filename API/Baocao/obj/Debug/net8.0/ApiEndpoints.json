@@ -1,0 +1,642 @@
+[
+  {
+    "ContainingType": "Baocao.Controllers.ChiTietPhieuChuyenController",
+    "Method": "createChiTietPhieuChuyen",
+    "RelativePath": "api/ChiTietPhieuChuyen/createChiTietPhieuChuyen",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chiTietPhieuChuyenList",
+        "Type": "System.Collections.Generic.List\u00601[[Baocao.Models.ChiTietPhieuChuyen, Baocao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Baocao.Controllers.ChiTietPhieuChuyenController",
+    "Method": "DeleteChiTietPhieuChuyen",
+    "RelativePath": "api/ChiTietPhieuChuyen/deleteChiTietPhieuChuyen/{ma_chi_tiet}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ma_chi_tiet",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Baocao.Controllers.ChiTietPhieuChuyenController",
+    "Method": "GetChiTietPhieuChuyenByMaPhieuChuyen",
+    "RelativePath": "api/ChiTietPhieuChuyen/getByMaPhieuChuyen/{ma_phieu_chuyen}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ma_phieu_chuyen",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Baocao.Controllers.ChiTietPhieuChuyenController",
+    "Method": "UpdateChiTietPhieuChuyen",
+    "RelativePath": "api/ChiTietPhieuChuyen/updateChiTietPhieuChuyen",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chiTietPhieuChuyen",
+        "Type": "Baocao.Models.ChiTietPhieuChuyen",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Baocao.Controllers.QuanLyChuyenHangController",
+    "Method": "createQuanLyChuyenHang",
+    "RelativePath": "api/QuanLyChuyenHang/createQuanLyChuyenHang",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "quanLyChuyenHang",
+        "Type": "Baocao.Models.QuanLyChuyenHang",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Baocao.Controllers.QuanLyChuyenHangController",
+    "Method": "DeleteQuanLyChuyenHang",
+    "RelativePath": "api/QuanLyChuyenHang/deleteQuanLyChuyenHang",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ma_phieu_chuyen",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Baocao.Controllers.QuanLyChuyenHangController",
+    "Method": "GetQuanLyChuyenHang",
+    "RelativePath": "api/QuanLyChuyenHang/getAllQuanLyChuyenHang",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Baocao.Controllers.QuanLyChuyenHangController",
+    "Method": "UpdateQuanLyChuyenHang",
+    "RelativePath": "api/QuanLyChuyenHang/updateQuanLyChuyenHang",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "quanLyChuyenHang",
+        "Type": "Baocao.Models.QuanLyChuyenHang",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Baocao.Controllers.QuanLyChuyenHangController",
+    "Method": "UpdateTrangThaiPhieuChuyen",
+    "RelativePath": "api/QuanLyChuyenHang/updateTrangThaiPhieuChuyen",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "UpdateTrangThaiRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Baocao.Controllers.QuanLyKhoController",
+    "Method": "createQuanLyKho",
+    "RelativePath": "api/QuanLyKho/createQuanLyKho",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "quanLyKho",
+        "Type": "Baocao.Models.QuanLyKho",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Baocao.Controllers.QuanLyKhoController",
+    "Method": "deleteQuanLyKho",
+    "RelativePath": "api/QuanLyKho/deleteQuanLyKho",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ma_kho",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Baocao.Controllers.QuanLyKhoController",
+    "Method": "GetQuanLyKho",
+    "RelativePath": "api/QuanLyKho/getAllQuanLyKho",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Baocao.Controllers.QuanLyKhoController",
+    "Method": "updateQuanLyKho",
+    "RelativePath": "api/QuanLyKho/updateQuanLyKho",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "quanLyKho",
+        "Type": "Baocao.Models.QuanLyKho",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Baocao.Controllers.QuanLyNhanVienKhoController",
+    "Method": "createQuanLyNhanVienKho",
+    "RelativePath": "api/QuanLyNhanVienKho/createQuanLyNhanVienKho",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "quanLyNhanVienKho",
+        "Type": "Baocao.Models.QuanLyNhanVienKho",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Baocao.Controllers.QuanLyNhanVienKhoController",
+    "Method": "deleteQuanLyNhanVienKho",
+    "RelativePath": "api/QuanLyNhanVienKho/deleteQuanLyNhanVienKho",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ma_nv",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Baocao.Controllers.QuanLyNhanVienKhoController",
+    "Method": "GetQuanLyNhanVienKho",
+    "RelativePath": "api/QuanLyNhanVienKho/getAllQuanLyNhanVienKho",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Baocao.Controllers.QuanLyNhanVienKhoController",
+    "Method": "updateQuanLyNhanVienKho",
+    "RelativePath": "api/QuanLyNhanVienKho/updateQuanLyNhanVienKho",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "quanLyNhanVienKho",
+        "Type": "Baocao.Models.QuanLyNhanVienKho",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Baocao.Controllers.QuanLyNhapKhoController",
+    "Method": "createQuanLyNhapKho",
+    "RelativePath": "api/QuanLyNhapKho/createQuanLyNhapKho",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "quanLyNhapKho",
+        "Type": "Baocao.Models.QuanLyNhapKho",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Baocao.Controllers.QuanLyNhapKhoController",
+    "Method": "deleteQuanLyNhapKho",
+    "RelativePath": "api/QuanLyNhapKho/deleteQuanLyNhapKho",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ma_nhap",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Baocao.Controllers.QuanLyNhapKhoController",
+    "Method": "GetQuanLyNhapKho",
+    "RelativePath": "api/QuanLyNhapKho/getAllQuanLyNhapKho",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Baocao.Controllers.QuanLyNhapKhoController",
+    "Method": "updateQuanLyNhapKho",
+    "RelativePath": "api/QuanLyNhapKho/updateQuanLyNhapKho",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "quanLyNhapKho",
+        "Type": "Baocao.Models.QuanLyNhapKho",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Baocao.Controllers.QuanLySanPhamController",
+    "Method": "createQuanLySanPham",
+    "RelativePath": "api/QuanLySanPham/createQuanLySanPham",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "quanLySanPham",
+        "Type": "Baocao.Models.QuanLySanPham",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Baocao.Controllers.QuanLySanPhamController",
+    "Method": "DeleteQuanLySanPham",
+    "RelativePath": "api/QuanLySanPham/deleteQuanLySanPham",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ma_sp",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Baocao.Controllers.QuanLySanPhamController",
+    "Method": "GetQuanLySanPham",
+    "RelativePath": "api/QuanLySanPham/getAllQuanLySanPham",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Baocao.Controllers.QuanLySanPhamController",
+    "Method": "UpdateQuanLySanPham",
+    "RelativePath": "api/QuanLySanPham/updateQuanLySanPham",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "quanLySanPham",
+        "Type": "Baocao.Models.QuanLySanPham",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Baocao.Controllers.TrangThaiPhieuChuyenController",
+    "Method": "GetTrangThaiPhieuChuyen",
+    "RelativePath": "api/TrangThaiPhieuChuyen/getAllTrangThaiPhieuChuyen",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
