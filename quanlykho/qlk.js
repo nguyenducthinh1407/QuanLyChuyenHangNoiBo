@@ -17,28 +17,28 @@ document.addEventListener("click", function () {
   bangThongbao.style.display = "none";
 });
 
-// mo phe duyet 
+// mo phe duyet
 function moPheduyet() {
-  window.location.href = "../pheduyet/pheduyet.html"
+  window.location.href = "../pheduyet/pheduyet.html";
 }
 
 // mo Quanlynhapkho
-function moQuanlynhapkho(){
+function moQuanlynhapkho() {
   window.location.href = "../quanlynhapkho/qlnk.html";
 }
 
 // mo Nhanvienkho
-function moQuanlynhanvienkho(){
-  window.location.href = "../quanlynhanvienkho/qlnvk.html"
+function moQuanlynhanvienkho() {
+  window.location.href = "../quanlynhanvienkho/qlnvk.html";
 }
 
-function moQuanlysanpham(){
-  window.location.href = "../quanlysanpham/qlsp.html"
+function moQuanlysanpham() {
+  window.location.href = "../quanlysanpham/qlsp.html";
 }
 
 // mo Quanlychuyenhang
-function moQuanlychuyenhang(){
-  window.location.href = "../quanlychuyenhang/qlch.html"
+function moQuanlychuyenhang() {
+  window.location.href = "../quanlychuyenhang/qlch.html";
 }
 
 // bảng thêm kho
@@ -54,63 +54,63 @@ function openKhoForm(mode) {
   const diaChiInput = document.querySelector("input[name='dia_chi']");
   const formTitle = document.querySelector(".tao_moi");
 
-  if (mode === 'edit' && selectedKho) {
-    formTitle.textContent = "Chỉnh sửa kho";
-    maKhoInput.value = selectedKho.ma_kho || '';
-    tenKhoInput.value = selectedKho.ten || '';
-    diaChiInput.value = selectedKho.dia_chi || '';
-    maKhoInput.style.display = 'block'; // Hiển thị trường mã kho
-    maKhoInput.previousElementSibling.style.display = 'block'; // Hiển thị span 'Mã kho'
+  if (mode === "edit" && selectedKho) {
+    maKhoInput.value = selectedKho.ma_kho || "";
+    tenKhoInput.value = selectedKho.ten || "";
+    diaChiInput.value = selectedKho.dia_chi || "";
+    maKhoInput.style.display = "block";
+    maKhoInput.previousElementSibling.style.display = "block";
   } else {
-    formTitle.textContent = "Tạo kho mới";
-    maKhoInput.value = '';
-    tenKhoInput.value = '';
-    diaChiInput.value = '';
-    maKhoInput.style.display = 'none'; // Ẩn trường mã kho khi thêm mới
-    maKhoInput.previousElementSibling.style.display = 'none'; // Ẩn span 'Mã kho'
+    maKhoInput.value = "";
+    tenKhoInput.value = "";
+    diaChiInput.value = "";
+    maKhoInput.style.display = "none";
+    maKhoInput.previousElementSibling.style.display = "none";
   }
 }
 
 function openthem() {
-    openKhoForm('add');
+  openKhoForm("add");
 }
 
 function opensua() {
-    if (selectedKho) {
-        openKhoForm('edit');
-    } else {
-        alert('Vui lòng chọn một kho để chỉnh sửa.');
-    }
+  if (selectedKho) {
+    openKhoForm("edit");
+  } else {
+    alert("Vui lòng chọn một kho để chỉnh sửa.");
+  }
 }
 
 btnHuy.addEventListener("click", function () {
   bangThemKho.style.display = "none";
 });
 
-
 //API Kho
 var duLieuKho = document.querySelector(".dulieu");
 
-let selectedKho = null; // Biến toàn cục để lưu trữ dữ liệu kho được chọn
+let selectedKho = null;
 
 function renderKho(dlKho) {
-  var htmls = dlKho.slice().reverse().map(function (dlk) {
-    return `
+  var htmls = dlKho
+    .slice()
+    .reverse()
+    .map(function (dlk) {
+      return `
       <div class="dl" data-ma-kho="${dlk.ma_kho}">
         <div>${dlk.ma_kho}</div>
         <div>${dlk.ten}</div>
         <div>${dlk.dia_chi}</div>
       </div>
     `;
-  });
+    });
   duLieuKho.innerHTML = htmls.join("");
 
   // Thêm sự kiện click cho mỗi dòng kho
-  document.querySelectorAll('.dl').forEach(row => {
-    row.addEventListener('click', function() {
+  document.querySelectorAll(".dl").forEach((row) => {
+    row.addEventListener("click", function () {
       const maKho = this.dataset.maKho;
-      selectedKho = dlKho.find(kho => kho.ma_kho == maKho);
-      console.log('Kho đã chọn:', selectedKho);
+      selectedKho = dlKho.find((kho) => kho.ma_kho == maKho);
+      console.log("Kho đã chọn:", selectedKho);
     });
   });
 }
@@ -125,20 +125,19 @@ function getKho(callback) {
 
 function start() {
   getKho(function (dlKho) {
-    console.log(dlKho); 
+    console.log(dlKho);
     renderKho(dlKho);
     xuLyTaoMoi();
   });
 }
-
 
 //thêm kho
 function xuLyTaoMoi() {
   var taoMoiKho = document.querySelector(".luu");
 
   if (taoMoiKho) {
-    taoMoiKho.onclick = function(event) {
-      event.preventDefault(); 
+    taoMoiKho.onclick = function (event) {
+      event.preventDefault();
       var maKho = document.querySelector("input[name='ma_kho']").value;
       var tenKho = document.querySelector("input[name='ten']").value;
       var diaChi = document.querySelector("input[name='dia_chi']").value;
@@ -146,7 +145,7 @@ function xuLyTaoMoi() {
       var khoData = {
         ma_kho: maKho,
         ten: tenKho,
-        dia_chi: diaChi
+        dia_chi: diaChi,
       };
 
       if (document.querySelector(".tao_moi").textContent === "Chỉnh sửa kho") {
@@ -168,65 +167,71 @@ function createKho(data) {
     },
     body: JSON.stringify(data),
   })
-  .then(response => response.json())
-  .then(result => {
-    if (result && result.TrangThaiCode === 200) {
-      alert("Thêm kho thành công!");
-      document.querySelector(".bang_them_kho").style.display = "none";
-      start();
-    } else {
-      const msg = result && result.ThongBaoLoi ? result.ThongBaoLoi : "Lỗi";
-      alert("Thêm kho thất bại: " + msg);
-    }
-  })
-  .catch(error => {
-    alert("Có lỗi xảy ra khi thêm kho.");
-    console.error("Error:", error);
-  });
+    .then((response) => response.json())
+    .then((result) => {
+      if (result && result.TrangThaiCode === 200) {
+        alert("Thêm kho thành công!");
+        document.querySelector(".bang_them_kho").style.display = "none";
+        start();
+      } else {
+        const msg = result && result.ThongBaoLoi ? result.ThongBaoLoi : "Lỗi";
+        alert("Thêm kho thất bại: " + msg);
+      }
+    })
+    .catch((error) => {
+      alert("Có lỗi xảy ra khi thêm kho.");
+      console.error("Error:", error);
+    });
 }
 
 function updateKho(data) {
-    fetch("https://localhost:7103/api/QuanLyKho/updateQuanLyKho", {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    })
-    .then(response => response.json())
-  .then(result => {
+  fetch("https://localhost:7103/api/QuanLyKho/updateQuanLyKho", {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  })
+    .then((response) => response.json())
+    .then((result) => {
       if (result && result.TrangThaiCode === 200) {
         alert("Cập nhật kho thành công!");
         document.querySelector(".bang_them_kho").style.display = "none";
         start();
       } else {
-        const msg = result && result.ThongBaoLoi ? result.ThongBaoLoi : "Không rõ nguyên nhân";
+        const msg =
+          result && result.ThongBaoLoi
+            ? result.ThongBaoLoi
+            : "Không rõ nguyên nhân";
         alert("Cập nhật kho thất bại: " + msg);
       }
     })
-    .catch(error => {
+    .catch((error) => {
       alert("Có lỗi xảy ra khi cập nhật kho.");
       console.error("Error:", error);
     });
 }
 
 function deleteKho(maKho) {
-  fetch(`https://localhost:7103/api/QuanLyKho/deleteQuanLyKho?ma_kho=${maKho}`, {
-    method: "DELETE",
-  })
-  .then(response => response.json())
-  .then(result => {
-    if (result.TrangThaiCode === 200) {
-      alert("Kho đã được xóa thành công.");
-      start(); 
-    } else {
-      alert("Không thể xóa kho: " + result.ThongBaoLoi);
+  fetch(
+    `https://localhost:7103/api/QuanLyKho/deleteQuanLyKho?ma_kho=${maKho}`,
+    {
+      method: "DELETE",
     }
-  })
-  .catch(error => {
-    alert("Có lỗi xảy ra khi xóa kho.");
-    console.error("Error:", error);
-  });
+  )
+    .then((response) => response.json())
+    .then((result) => {
+      if (result.TrangThaiCode === 200) {
+        alert("Kho đã được xóa thành công.");
+        start();
+      } else {
+        alert("Không thể xóa kho: " + result.ThongBaoLoi);
+      }
+    })
+    .catch((error) => {
+      alert("Có lỗi xảy ra khi xóa kho.");
+      console.error("Error:", error);
+    });
 }
 
 function openxoa() {
@@ -235,8 +240,7 @@ function openxoa() {
       deleteKho(selectedKho.ma_kho);
     }
   } else {
-    alert('Vui lòng chọn một kho để xóa.');
+    alert("Vui lòng chọn một kho để xóa.");
   }
 }
 start();
-

@@ -343,13 +343,12 @@
   top: 40%;
   left: 40%;
 }
-.tao_moi{
+.tao_moi {
   width: 100%;
   height: 20px;
   padding: 5px 10px;
   border-bottom: 1px solid rgb(156, 156, 156);
   color: red;
-
 }
 .thao_tac {
   position: absolute;
@@ -477,7 +476,7 @@
   flex-direction: column;
   width: 100%;
 }
-.dl{
+.dl {
   display: grid;
   grid-template-columns: 1fr 2fr 3fr;
   gap: 10px;
@@ -486,5 +485,3 @@
   border-bottom: 1px solid #ccc;
   padding: 0 20px;
 }
-
-

@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Baocao\\API\\",
+  "WorkspaceRootPath": "D:\\Chuyenhangnoibo\\API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C539143B-2EF3-4F2B-99AB-74E72676BFD0}|Baocao\\Baocao.csproj|d:\\baocao\\api\\baocao\\controllers\\quanlysanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C539143B-2EF3-4F2B-99AB-74E72676BFD0}|Baocao\\Baocao.csproj|d:\\chuyenhangnoibo\\api\\baocao\\controllers\\quanlysanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C539143B-2EF3-4F2B-99AB-74E72676BFD0}|Baocao\\Baocao.csproj|solutionrelative:baocao\\controllers\\quanlysanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C539143B-2EF3-4F2B-99AB-74E72676BFD0}|Baocao\\Baocao.csproj|d:\\baocao\\api\\baocao\\controllers\\quanlynhapkhocontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C539143B-2EF3-4F2B-99AB-74E72676BFD0}|Baocao\\Baocao.csproj|d:\\chuyenhangnoibo\\api\\baocao\\controllers\\quanlynhapkhocontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C539143B-2EF3-4F2B-99AB-74E72676BFD0}|Baocao\\Baocao.csproj|solutionrelative:baocao\\controllers\\quanlynhapkhocontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C539143B-2EF3-4F2B-99AB-74E72676BFD0}|Baocao\\Baocao.csproj|d:\\baocao\\api\\baocao\\controllers\\quanlykhocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C539143B-2EF3-4F2B-99AB-74E72676BFD0}|Baocao\\Baocao.csproj|d:\\chuyenhangnoibo\\api\\baocao\\controllers\\quanlykhocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C539143B-2EF3-4F2B-99AB-74E72676BFD0}|Baocao\\Baocao.csproj|solutionrelative:baocao\\controllers\\quanlykhocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -28,9 +28,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "QuanLySanPhamController.cs",
-              "DocumentMoniker": "D:\\Baocao\\API\\Baocao\\Controllers\\QuanLySanPhamController.cs",
+              "DocumentMoniker": "D:\\Chuyenhangnoibo\\API\\Baocao\\Controllers\\QuanLySanPhamController.cs",
               "RelativeDocumentMoniker": "Baocao\\Controllers\\QuanLySanPhamController.cs",
-              "ToolTip": "D:\\Baocao\\API\\Baocao\\Controllers\\QuanLySanPhamController.cs",
+              "ToolTip": "D:\\Chuyenhangnoibo\\API\\Baocao\\Controllers\\QuanLySanPhamController.cs",
               "RelativeToolTip": "Baocao\\Controllers\\QuanLySanPhamController.cs",
               "ViewState": "AgIAADoAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -41,9 +41,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "QuanLyNhapKhoControllers.cs",
-              "DocumentMoniker": "D:\\Baocao\\API\\Baocao\\Controllers\\QuanLyNhapKhoControllers.cs",
+              "DocumentMoniker": "D:\\Chuyenhangnoibo\\API\\Baocao\\Controllers\\QuanLyNhapKhoControllers.cs",
               "RelativeDocumentMoniker": "Baocao\\Controllers\\QuanLyNhapKhoControllers.cs",
-              "ToolTip": "D:\\Baocao\\API\\Baocao\\Controllers\\QuanLyNhapKhoControllers.cs",
+              "ToolTip": "D:\\Chuyenhangnoibo\\API\\Baocao\\Controllers\\QuanLyNhapKhoControllers.cs",
               "RelativeToolTip": "Baocao\\Controllers\\QuanLyNhapKhoControllers.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -53,9 +53,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "QuanLyKhoController.cs",
-              "DocumentMoniker": "D:\\Baocao\\API\\Baocao\\Controllers\\QuanLyKhoController.cs",
+              "DocumentMoniker": "D:\\Chuyenhangnoibo\\API\\Baocao\\Controllers\\QuanLyKhoController.cs",
               "RelativeDocumentMoniker": "Baocao\\Controllers\\QuanLyKhoController.cs",
-              "ToolTip": "D:\\Baocao\\API\\Baocao\\Controllers\\QuanLyKhoController.cs",
+              "ToolTip": "D:\\Chuyenhangnoibo\\API\\Baocao\\Controllers\\QuanLyKhoController.cs",
               "RelativeToolTip": "Baocao\\Controllers\\QuanLyKhoController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

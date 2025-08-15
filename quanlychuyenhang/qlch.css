@@ -528,10 +528,12 @@
 }
 
 .nhap_tt {
-  display: flex;
+  display: grid;
+  grid-template-columns: 0.7fr 1fr 1fr 0.1fr;
   justify-content: space-between;
   align-items: center;
   border: 1px solid rgb(151, 151, 151);
+  
 }
 .mct,
 .mpc,

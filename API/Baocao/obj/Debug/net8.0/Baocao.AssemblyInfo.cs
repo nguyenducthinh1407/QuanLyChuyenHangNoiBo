@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Baocao")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2289ddc0837fcc87189a244f849f248ed443385e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Baocao")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Baocao")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

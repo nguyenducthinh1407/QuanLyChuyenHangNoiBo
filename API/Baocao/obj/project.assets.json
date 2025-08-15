@@ -658,11 +658,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Baocao\\API\\Baocao\\Baocao.csproj",
+      "projectUniqueName": "D:\\Chuyenhangnoibo\\API\\Baocao\\Baocao.csproj",
       "projectName": "Baocao",
-      "projectPath": "D:\\Baocao\\API\\Baocao\\Baocao.csproj",
+      "projectPath": "D:\\Chuyenhangnoibo\\API\\Baocao\\Baocao.csproj",
       "packagesPath": "C:\\Users\\Nguyen Duc Thinh\\.nuget\\packages\\",
-      "outputPath": "D:\\Baocao\\API\\Baocao\\obj\\",
+      "outputPath": "D:\\Chuyenhangnoibo\\API\\Baocao\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

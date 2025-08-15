@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Baocao",
+    "\\Baocao\\Controllers",
+    "\\Baocao\\Models"
   ],
+  "SelectedNode": "\\Baocao\\Controllers\\QuanLyChuyenHangController.cs",
   "PreviewInSolutionExplorer": false
 }
