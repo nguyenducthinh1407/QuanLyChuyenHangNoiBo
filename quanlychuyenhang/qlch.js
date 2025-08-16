@@ -44,7 +44,7 @@ function moQuanlychuyenhang() {
   window.location.href = "../quanlychuyenhang/qlch.html";
 }
 
-//thêm kho
+//thêm bảng chuyển hàng
 const bangThemChuyenHang = document.querySelector(".bang_them_chuyen_hang");
 const btnHuy = document.querySelector(".huy");
 
