@@ -46,7 +46,7 @@ function moQuanlychuyenhang(){
   window.location.href = "../quanlychuyenhang/qlch.html"
 }
 
-//thêm kho
+//thêm bảng nhân viên
 const bangThemNhanVienKho = document.querySelector(".bang_them_nhan_vien_kho");
 const btnHuy = document.querySelector(".huy");
 

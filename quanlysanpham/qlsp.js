@@ -48,7 +48,7 @@ function moQuanlychuyenhang(){
 }
 
 
-//tạo mới sản phẩm
+//tạo bảng thêm sản phẩm
 const bangThemSanPham = document.querySelector(".bang_them_san_pham");
 const btnHuy = document.querySelector(".huy");
 

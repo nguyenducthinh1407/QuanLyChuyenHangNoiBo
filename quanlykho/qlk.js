@@ -55,12 +55,14 @@ function openKhoForm(mode) {
   const formTitle = document.querySelector(".tao_moi");
 
   if (mode === "edit" && selectedKho) {
+    isEditMode = true;
     maKhoInput.value = selectedKho.ma_kho || "";
     tenKhoInput.value = selectedKho.ten || "";
     diaChiInput.value = selectedKho.dia_chi || "";
     maKhoInput.style.display = "block";
     maKhoInput.previousElementSibling.style.display = "block";
   } else {
+    isEditMode = false;
     maKhoInput.value = "";
     tenKhoInput.value = "";
     diaChiInput.value = "";
@@ -89,6 +91,7 @@ btnHuy.addEventListener("click", function () {
 var duLieuKho = document.querySelector(".dulieu");
 
 let selectedKho = null;
+let isEditMode = false;
 
 function renderKho(dlKho) {
   var htmls = dlKho
@@ -105,7 +108,6 @@ function renderKho(dlKho) {
     });
   duLieuKho.innerHTML = htmls.join("");
 
-  // Thêm sự kiện click cho mỗi dòng kho
   document.querySelectorAll(".dl").forEach((row) => {
     row.addEventListener("click", function () {
       const maKho = this.dataset.maKho;
@@ -148,7 +150,7 @@ function xuLyTaoMoi() {
         dia_chi: diaChi,
       };
 
-      if (document.querySelector(".tao_moi").textContent === "Chỉnh sửa kho") {
+      if (isEditMode) {
         updateKho(khoData);
       } else {
         createKho(khoData);
